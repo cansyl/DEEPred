@@ -1,34 +1,10 @@
 
 ## DEEPred 
 ## Dependencies
+#### python 3.5
+#### tensorflow
+#### numpy
 
-#### Java 8  
-
-For Linux, you can install latest version of Java by running following commands from terminal:
-```
-sudo apt-get update
-sudo apt-get install default-jre
-sudo apt-get install default-jdk
-```
-For Mac, you can install latest version of Java by running following commands from terminal:
-```
-brew update
-brew cask install java
-```
-
-#### g++ (any version)  
-
-For Linux, you can install latest version of g++ by running following commands from terminal
-```
-sudo apt-get update
-sudo apt-get install build-essential
-```
-For Mac, you can install g++ by running following command from terminal. <br />
-
- ```
- g++
- ```
- If you've already installed g++, the terminal prints this message, "no input files". <br />
 
 ## Download
 ```
