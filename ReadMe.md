@@ -9,7 +9,7 @@
 ## How to run DEEPred
 * Install dependencies and necessary libraries.
 * Download DEEPred repository
-* Download the compressed "FeatureVectors" folder from [here](goo.gl/q8ceAM) and put it under DEEPred folder. 
+* Download the compressed "FeatureVectors" folder from [here](http://goo.gl/q8ceAM) and put it under DEEPred folder. 
 * Decompress the files under the following folders
     * FastaFiles
     * GOTermFiles
