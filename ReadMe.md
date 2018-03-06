@@ -7,13 +7,18 @@
 
 
 ## How to run DEEPred
-* Bullet list
+* Install dependencies and necessary libraries that are written above.
     * Nested bullet
     * Sub-nested bullet etc
-* Bullet list item 2
-Install dependencies and necessary libraries that are written above.
-Download DEEPred repository
-Decompress all the files under "FastaFiles", "GOTermFiles" and "TrainTestDatasets"
+* Download DEEPred repository
+* Decompress all the files under
+   *FastaFiles
+   *GOTermFiles
+   *TrainTestDatasets
+* Run DEEPred by running which has the following commnand line arguments
+   *FastaFiles
+   *GOTermFiles
+   *TrainTestDatasets
 
 ```
 ./runLinux.sh 
