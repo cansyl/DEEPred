@@ -7,15 +7,14 @@
 
 
 ## How to run DEEPred
-* Install dependencies and necessary libraries that are written above.
-    * Nested bullet
-    * Sub-nested bullet etc
+* Install dependencies and necessary libraries.
 * Download DEEPred repository
-* Decompress all the files under the following folders
+* Download the compressed "FeatureVectors" folder from [here](goo.gl/q8ceAM) and put it under DEEPred folder. 
+* Decompress the files under the following folders
     * FastaFiles
     * GOTermFiles
     * TrainTestDatasets
-* Download the feature vectors from [here](goo.gl/q8ceAM) and put it under DEEPred folder. 
+    * FeatureVectors
 * Run DEEPred script (4_layer_train.py for the 4 layered multi-task DNN or 5_layer_train.py for the 5 layered multi-task DNN ) by providing following command line arguments
     * number of neurons at the first layer
     * number of neurons at the second layer
