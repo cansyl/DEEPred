@@ -7,7 +7,10 @@
 
 
 ## How to run DEEPred
-
+* Bullet list
+    * Nested bullet
+    * Sub-nested bullet etc
+* Bullet list item 2
 Install dependencies and necessary libraries that are written above.
 Download DEEPred repository
 Decompress all the files under "FastaFiles", "GOTermFiles" and "TrainTestDatasets"
