@@ -11,68 +11,35 @@
     * Nested bullet
     * Sub-nested bullet etc
 * Download DEEPred repository
-* Decompress all the files under
-    * Nested bulletFastaFiles
-    * Sub-nested bullet etcGOTermFiles
+* Decompress all the files under the following folders
+    * FastaFiles
+    * GOTermFiles
     * TrainTestDatasets
+* Run DEEPred script (4_layer_train.py for the 4 layered multi-task DNN or 5_layer_train.py for the 5 layered multi-task DNN ) by providing following command line arguments
+    * number of neurons at the first layer
+    * number of neurons at the second layer
+    * number of epochs
+    * GO terms to be trained in a model (.txt file Could be any file under GOTermFiles)
+    * GO category (MF, BP, CC)
+    * Type of feature (could be PAAC, CTriad, MFSPMAP, BPSPMAP, CCSPMAP)
+    * Learning rate
+    * Mini-batch size
+    * optimizer type (adam, momentum, rmsprop)
+    * Learning rate
+    * Mini-batch size
+    * optimizer type (adam, momentum, rmsprop)
+    * normalize_inputs (yes, no)
+    * batch_normalization (yes, no)
+    * learning_rate_decay (yes, no)
+    * drop_out_rate
+    * normalize_inputs (yes, no)
+    * number of neurons at the second layer (if you run 5_layer_train.py)
 
-
+Example:
 ```
-./runLinux.sh 
+python 4_layer_train.py 1400 10 1000 MFGOTerms30_2_1001_2000.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
 ```
 
-
-Above file (around 3 GB) should be downloaded from:
-
-http://cansyl.metu.edu.tr/ECPred.html
-
-## Installation
-
-Extract the files using: <br />
-```
-tar -xvf ECPred.tar.gz  
-```
-After extraction the total size of the folder will be around 10 GB. <br />
-
-Run runLinux.sh or runMac.sh from terminal according to your OS using one of these commands: <br />
-```
-./runLinux.sh 
-```
-or <br />
-```
-./runMac.sh
-```
-These bash scripts will install necessary libraries and tools.
-
-## Usage
-
-Run the following command on terminal to analyze the file "filename.fasta"  <br />
-```
-java -jar ECPred.jar filename.fasta
-```
-## Input
-
-ECPred accepts one input fasta file which may contain up to 20 proteins.
-
-## Output
-
-"predictionResults_filename_Date-Time.tsv": <br />
-
-A tsv file that contains the main, subfamily, sub-subfamily and substrate class predictions together with confidence scores for each prediction; alternatively, the output can be “non-enzyme” or “no prediction”.
-
-## Data files
-
-"ECNumberList.txt":  <br />
-
-A text file containing the list of EC numbers that ECPred can predict.  <br />
-
-"test.fasta":  <br />
-
-An example input fasta file.  <br />
-
-"predictionResults_input_20171128-172728.tsv":  <br />
-
-An example output prediction file (for test.fasta).
 
 ## License
 DEEPred
