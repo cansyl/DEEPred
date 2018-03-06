@@ -12,13 +12,10 @@
     * Sub-nested bullet etc
 * Download DEEPred repository
 * Decompress all the files under
-   *FastaFiles
-   *GOTermFiles
-   *TrainTestDatasets
-* Run DEEPred by running which has the following commnand line arguments
-   *FastaFiles
-   *GOTermFiles
-   *TrainTestDatasets
+    * Nested bulletFastaFiles
+    * Sub-nested bullet etcGOTermFiles
+    * TrainTestDatasets
+
 
 ```
 ./runLinux.sh 
