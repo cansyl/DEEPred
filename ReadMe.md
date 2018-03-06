@@ -1,15 +1,22 @@
 
 ## DEEPred 
 ## Dependencies
-#### python 3.5
-#### tensorflow
-#### numpy
+#### python 3.5.1
+#### tensorflow 1.4.1
+#### numpy 1.13.3
 
 
-## Download
+## How to run DEEPred
+
+Install dependencies and necessary libraries that are written above.
+Download DEEPred repository
+Decompress all the files under "FastaFiles", "GOTermFiles" and "TrainTestDatasets"
+
 ```
-ECPred.tar.gz
+./runLinux.sh 
 ```
+
+
 Above file (around 3 GB) should be downloaded from:
 
 http://cansyl.metu.edu.tr/ECPred.html
