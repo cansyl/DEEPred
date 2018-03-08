@@ -41,6 +41,7 @@ python 4_layer_train.py 1400 100 1000 MFGOTerms30_2_1001_2000.txt MF MFSPMAP 0.0
 * "FastaFiles" folder includes all training and test sequences used in this study. 
 * "TrainTestDatasets" includes training and testing UniProt identifiers for each GO term for all categories of GO.
 * Manual experimental (all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv) and all annotations (all_categories_all_annots_29_08_2017_Propagated.tsv) (includuding annotations with IEA evidence codes) are available under "Annots" folder.
+* "FirstRuns" folder includes the GO terms trained at each model for feature selection and hyper-parameter optimization.
 
 ## License
 DEEPred
