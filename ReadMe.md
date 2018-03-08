@@ -25,21 +25,19 @@
     * Learning rate
     * Mini-batch size
     * optimizer type (adam, momentum, rmsprop)
-    * Learning rate
-    * Mini-batch size
-    * optimizer type (adam, momentum, rmsprop)
     * normalize_inputs (yes, no)
     * batch_normalization (yes, no)
     * learning_rate_decay (yes, no)
     * drop_out_rate
-    * normalize_inputs (yes, no)
     * number of neurons at the second layer (if you run 5_layer_train.py)
 
 Example:
 ```
-python 4_layer_train.py 1400 10 1000 MFGOTerms30_2_1001_2000.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
+python 4_layer_train.py 1400 100 1000 MFGOTerms30_2_1001_2000.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
 ```
+The list of GO terms trained in models (e.g. MFGOTerms30_2_1001_2000.txt in the above example) are located under "GOTermFiles" folder. Feature vectors that were used in training and testing are located under "FeatureVectors" folder. "FastaFiles" folder includes all training and test sequences used in this study. 
 
+Manual experimental and all annotations (includuding annotations with IEA evidence codes) are available under "Annots" folder.
 
 ## License
 DEEPred
