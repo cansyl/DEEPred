@@ -1,5 +1,5 @@
 
-## DEEPred 
+# DEEPred 
 ## Dependencies
 #### python 3.5.1
 #### tensorflow 1.4.1
@@ -9,12 +9,13 @@
 ## How to run DEEPred
 * Install dependencies and necessary libraries.
 * Download DEEPred repository
-* Download the compressed "FeatureVectors" folder from [here](http://goo.gl/q8ceAM) and put it under DEEPred folder. 
+* Download the compressed "FeatureVectors.zip" and "Annots.zip" files from [here](goo.gl/Kd7FkU) and put them under DEEPred folder. 
 * Decompress the files under the following folders
     * FastaFiles
     * GOTermFiles
     * TrainTestDatasets
     * FeatureVectors
+    * Annots
 * Run DEEPred script (4_layer_train.py for the 4 layered multi-task DNN or 5_layer_train.py for the 5 layered multi-task DNN ) by providing following command line arguments
     * number of neurons at the first layer
     * number of neurons at the second layer
@@ -35,9 +36,11 @@ Example:
 ```
 python 4_layer_train.py 1400 100 1000 MFGOTerms30_2_1001_2000.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
 ```
-The list of GO terms trained in models (e.g. MFGOTerms30_2_1001_2000.txt in the above example) are located under "GOTermFiles" folder. Feature vectors that were used in training and testing are located under "FeatureVectors" folder. "FastaFiles" folder includes all training and test sequences used in this study. 
-
-Manual experimental and all annotations (includuding annotations with IEA evidence codes) are available under "Annots" folder.
+* The list of GO terms trained in models (e.g. MFGOTerms30_2_1001_2000.txt in the above example) are located under "GOTermFiles" folder.
+* Feature vectors that were used in training and testing are located under "FeatureVectors" folder. 
+* "FastaFiles" folder includes all training and test sequences used in this study. 
+* "TrainTestDatasets" includes training and testing UniProt identifiers for each GO term for all categories of GO.
+* Manual experimental (all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv) and all annotations (all_categories_all_annots_29_08_2017_Propagated.tsv) (includuding annotations with IEA evidence codes) are available under "Annots" folder.
 
 ## License
 DEEPred
