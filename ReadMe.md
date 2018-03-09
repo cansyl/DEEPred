@@ -1,9 +1,9 @@
 
 # DEEPred 
 ## Dependencies
-#### python 3.5.1 link ver bunlara
-#### tensorflow 1.4.1
-#### numpy 1.13.3
+#### [python 3.5.1](https://www.python.org/downloads/release/python-351/)
+#### [tensorflow 1.4.1](https://github.com/tensorflow/tensorflow/releases/tag/v1.4.1)
+#### [numpy 1.13.3](https://pypi.python.org/pypi/numpy/1.13.3)
 
 
 ## How to run DEEPred
