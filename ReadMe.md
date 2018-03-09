@@ -1,7 +1,7 @@
 
 # DEEPred 
 ## Dependencies
-#### python 3.5.1
+#### python 3.5.1 link ver bunlara
 #### tensorflow 1.4.1
 #### numpy 1.13.3
 
