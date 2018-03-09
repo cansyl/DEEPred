@@ -34,9 +34,9 @@
 
 Example:
 ```
-python 4_layer_train.py 1400 100 1000 MFGOTerms30_2_1001_2000.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
+python 4_layer_train.py 1400 100 1000 MFGOTerms30_4_201_300_2.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
 ```
-* The list of GO terms trained in models (e.g. MFGOTerms30_2_1001_2000.txt in the above example) are located under "GOTermFiles" folder.
+* The list of GO terms trained in models (e.g. MFGOTerms30_4_201_300_2.txt in the above example) are located under "GOTermFiles" folder.
 * Feature vectors that were used in training and testing are located under "FeatureVectors" folder. 
 * "FastaFiles" folder includes all training and test sequences used in this study. 
 * "TrainTestDatasets" includes training and testing UniProt identifiers for each GO term for all categories of GO.
