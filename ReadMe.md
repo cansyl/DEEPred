@@ -4,19 +4,19 @@
 #### python 3.5.1 link ver bunlara
 #### tensorflow 1.4.1
 #### numpy 1.13.3
-5 layerdan bahsetme
+
 
 ## How to run DEEPred
 * Install dependencies and necessary libraries.
 * Download DEEPred repository
-* Download the compressed "FeatureVectors.zip" and "Annots.zip" files from [here](goo.gl/Kd7FkU) and put them under DEEPred folder. 
+* Download the compressed "FeatureVectors.zip" and "Annots.zip" files from [here](http://goo.gl/Kd7FkU) and put them under DEEPred folder. 
 * Decompress the files under the following folders
     * FastaFiles
     * GOTermFiles
     * TrainTestDatasets
     * FeatureVectors
     * Annots
-* Run DEEPred script (4_layer_train.py for the 4 layered multi-task DNN or 5_layer_train.py for the 5 layered multi-task DNN ) by providing following command line arguments
+* Run DEEPred script (4_layer_train.py) by providing following command line arguments:
     * number of neurons at the first layer
     * number of neurons at the second layer
     * number of epochs
@@ -30,7 +30,7 @@
     * batch_normalization (yes, no)
     * learning_rate_decay (yes, no)
     * drop_out_rate
-    * number of neurons at the second layer (if you run 5_layer_train.py)
+
 
 Example:
 ```
