@@ -4,7 +4,7 @@
 #### python 3.5.1 link ver bunlara
 #### tensorflow 1.4.1
 #### numpy 1.13.3
-
+5 layerdan bahsetme
 
 ## How to run DEEPred
 * Install dependencies and necessary libraries.
