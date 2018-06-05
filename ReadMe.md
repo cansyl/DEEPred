@@ -2,26 +2,17 @@
 # DEEPred 
 ## Descriptions of Folders and Files Under This Repository
 * FastaFiles
-    * MF_deepred_training_sequences.fasta.zip
-        * Training and test sequences of molecular function category
-    * BP_deepred_training_sequences.fasta.zip
-         * Training and test sequences of biological process category
-    * CC_deepred_training_sequences.fasta.zip
-         * Training and test sequences of cellular component category
-    * mfo_cafa_only_annot_prot.fasta.zip
-        * CAFA benchmarking protein sequences for molecular function category
-    * bpo_cafa_only_annot_prot.fasta.zip
-         * CAFA benchmarking protein sequences for biological process category
-    * cco_cafa_only_annot_prot.fasta.zip
-         * CAFA benchmarking protein sequences for cellular component category
+    * Includes training and test sequences for each GO category. For example, the fasta file of training and test sequences for molecular function category is "MF_deepred_training_sequences.fasta.zip" and fasta file of CAFA benchmarking protein sequences for molecular function category is "mfo_cafa_only_annot_prot.fasta.zip".
 * FirstRuns
-    * Includes the GO terms trained at each model for feature selection and hyper-parameter optimization. For example   "MFGOTerms30_4_201_300_2.txt" includes the GO terms trained for the fourth level.
-* The list of GO terms trained in models (e.g. MFGOTerms30_4_201_300_2.txt in the above example) are located under "GOTermFiles" folder.
-Feature vectors that were used in training and testing are located under "FeatureVectors" folder.
-* "FastaFiles" folder includes all training and test sequences used in this study.
-* "TrainTestDatasets" includes training and testing UniProt identifiers for each GO term for all categories of GO.
-* Manual experimental (all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv) and all annotations (all_categories_all_annots_29_08_2017_Propagated.tsv) (includuding annotations with IEA evidence codes) are available under "Annots" folder.
-* "FirstRuns" folder includes the GO terms trained at each model for feature selection and hyper-parameter optimization.
+    * Includes the GO terms trained in each model for feature selection and hyper-parameter optimization. File names include information about the level of GO terms, number of protein association range and the model number. For example, "MFGOTerms30_4_201_300_2.txt" includes the GO terms trained on the fourth level of GO DAG that have protein associations between 201 and 300 and this is the second model trained on the fourth level. Each files includes the trained GO terms and number of protein associations of the correponding GO terms in a tab-separated format.
+* GOTermFiles
+    * Includes the GO terms trained in each model. There are three zipped folders under this directory (one file for each GO category). Each unzipped folder includes a sub-folder named "5" and the model files are included in this folder. The format of the files are same as above (explained under FirstRuns).
+* FeatureVectors (This folder is not available under repository. It should be downloaded from [here](http://goo.gl/Kd7FkU) .
+    * This folder includes feature vectors that were used for training and testing of the system. For example, "Parsed_PAACFeatures_uniprot_training_test_set.txt" file contains PAAC feature vectors and "Parsed_BPSPMAPFeatures_CAFA2.txt" includes SPMAP feature vectors for BP CAFA benchmarking protein sequences.
+* TrainTestDatasets
+    * Includes training and testing UniProt identifiers.There are three zipped folders under this directory (one file for each GO category). The unzipped folders include two files (train and test) for each GO term trained in the corresposding category. Example:  train_GO:0043175.ids and test_GO:0043175.ids
+* Annots
+    * Includes annotation files. Manual experimental annotations are stored in  "all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv" file and all annotations (including annotations with IEA evidence codes) are stored in "all_categories_all_annots_29_08_2017_Propagated.tsv" file.
 
 
          
@@ -61,8 +52,8 @@ Example:
 ```
 python 4_layer_train.py 1400 100 1000 MFGOTerms30_4_201_300_2.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
 ```
-
-
+## Output of the script
+The prediction scores and the performance results for the test sequences are printed as the output.
 ## License
 DEEPred
     Copyright (C) 2018 CanSyL
