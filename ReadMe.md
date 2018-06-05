@@ -4,15 +4,15 @@
 * FastaFiles
     * Includes training and test sequences for each GO category. For example, the fasta file of training and test sequences for molecular function category is "MF_deepred_training_sequences.fasta.zip" and fasta file of CAFA benchmarking protein sequences for molecular function category is "mfo_cafa_only_annot_prot.fasta.zip".
 * FirstRuns
-    * Includes the GO terms trained in each model for feature selection and hyper-parameter optimization. File names include information about the level of GO terms, number of protein association range and the model number. For example, "MFGOTerms30_4_201_300_2.txt" includes the GO terms trained on the fourth level of GO DAG that have protein associations between 201 and 300 and this is the second model trained on the fourth level. Each files includes the trained GO terms and number of protein associations of the correponding GO terms in a tab-separated format.
+    * Includes the GO terms trained in each model for feature selection and hyper-parameter optimization. File names include information about the level of GO terms, number of protein association range and the model number. For example, "MFGOTerms30_4_201_300_2.txt" includes the GO terms trained on the fourth level of GO DAG that have protein associations between 201 and 300 and this is the second model trained on the fourth level. Each file includes the trained GO terms and number of protein associations of the correponding GO terms in a tab-separated format.
 * GOTermFiles
     * Includes the GO terms trained in each model. There are three zipped folders under this directory (one file for each GO category). Each unzipped folder includes a sub-folder named "5" and the model files are included in this folder. The format of the files are same as above (explained under FirstRuns).
 * FeatureVectors (This folder is not available under repository. It should be downloaded from [here](http://goo.gl/Kd7FkU) .
     * This folder includes feature vectors that were used for training and testing of the system. For example, "Parsed_PAACFeatures_uniprot_training_test_set.txt" file contains PAAC feature vectors and "Parsed_BPSPMAPFeatures_CAFA2.txt" includes SPMAP feature vectors for BP CAFA benchmarking protein sequences.
 * TrainTestDatasets
-    * Includes training and testing UniProt identifiers.There are three zipped folders under this directory (one file for each GO category). The unzipped folders include two files (train and test) for each GO term trained in the corresposding category. Example:  train_GO:0043175.ids and test_GO:0043175.ids
-* Annots
-    * Includes annotation files. Manual experimental annotations are stored in  "all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv" file and all annotations (including annotations with IEA evidence codes) are stored in "all_categories_all_annots_29_08_2017_Propagated.tsv" file.
+    * Includes training and testing UniProt identifiers for each GO term. There are three zipped folders under this directory (one file for each GO category). The unzipped folders include two files (train and test) for each GO term trained in the corresposding category. Example:  train_GO:0043175.ids and test_GO:0043175.ids
+* Annots  (This folder is not available under repository. It should be downloaded from [here](http://goo.gl/Kd7FkU)
+    * Includes training and testing annotation files. Manual experimental annotations are stored in  "all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv" file and all annotations (including annotations with IEA evidence codes) are stored in "all_categories_all_annots_29_08_2017_Propagated.tsv" file.
 
 
          
