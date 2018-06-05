@@ -1,5 +1,30 @@
 
 # DEEPred 
+## Descriptions of Folders and Files Under This Repository
+* FastaFiles
+    * MF_deepred_training_sequences.fasta.zip
+        * Training and test sequences of molecular function category
+    * BP_deepred_training_sequences.fasta.zip
+         * Training and test sequences of biological process category
+    * CC_deepred_training_sequences.fasta.zip
+         * Training and test sequences of cellular component category
+    * mfo_cafa_only_annot_prot.fasta.zip
+        * CAFA benchmarking protein sequences for molecular function category
+    * bpo_cafa_only_annot_prot.fasta.zip
+         * CAFA benchmarking protein sequences for biological process category
+    * cco_cafa_only_annot_prot.fasta.zip
+         * CAFA benchmarking protein sequences for cellular component category
+* FirstRuns
+    * Includes the GO terms trained at each model for feature selection and hyper-parameter optimization. For example   "MFGOTerms30_4_201_300_2.txt" includes the GO terms trained for the fourth level.
+* The list of GO terms trained in models (e.g. MFGOTerms30_4_201_300_2.txt in the above example) are located under "GOTermFiles" folder.
+Feature vectors that were used in training and testing are located under "FeatureVectors" folder.
+* "FastaFiles" folder includes all training and test sequences used in this study.
+* "TrainTestDatasets" includes training and testing UniProt identifiers for each GO term for all categories of GO.
+* Manual experimental (all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv) and all annotations (all_categories_all_annots_29_08_2017_Propagated.tsv) (includuding annotations with IEA evidence codes) are available under "Annots" folder.
+* "FirstRuns" folder includes the GO terms trained at each model for feature selection and hyper-parameter optimization.
+
+
+         
 ## Dependencies
 #### [python 3.5.1](https://www.python.org/downloads/release/python-351/)
 #### [tensorflow 1.4.1](https://github.com/tensorflow/tensorflow/releases/tag/v1.4.1)
@@ -36,12 +61,7 @@ Example:
 ```
 python 4_layer_train.py 1400 100 1000 MFGOTerms30_4_201_300_2.txt MF MFSPMAP 0.001 32 adam yes yes yes 0.6
 ```
-* The list of GO terms trained in models (e.g. MFGOTerms30_4_201_300_2.txt in the above example) are located under "GOTermFiles" folder.
-* Feature vectors that were used in training and testing are located under "FeatureVectors" folder. 
-* "FastaFiles" folder includes all training and test sequences used in this study. 
-* "TrainTestDatasets" includes training and testing UniProt identifiers for each GO term for all categories of GO.
-* Manual experimental (all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv) and all annotations (all_categories_all_annots_29_08_2017_Propagated.tsv) (includuding annotations with IEA evidence codes) are available under "Annots" folder.
-* "FirstRuns" folder includes the GO terms trained at each model for feature selection and hyper-parameter optimization.
+
 
 ## License
 DEEPred
