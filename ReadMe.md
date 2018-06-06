@@ -11,6 +11,8 @@
     * This folder includes feature vectors that were used for training and testing of the system. For example, "Parsed_PAACFeatures_uniprot_training_test_set.txt" file contains PAAC feature vectors and "Parsed_BPSPMAPFeatures_CAFA2.txt" includes SPMAP feature vectors for BP CAFA benchmarking protein sequences.
 * TrainTestDatasets
     * Includes training and testing UniProt identifiers for each GO term. There are three zipped folders under this directory (one file for each GO category). The unzipped folders include two files (train and test) for each GO term trained in the corresposding category. Example:  train_GO:0043175.ids and test_GO:0043175.ids
+* ElectronicAnnotationTrainingDatasets
+    * Includes training and testing UniProt identifiers for GO terms that were trained including electronic annotation. There is a single zipped folder under this directory. The unzipped folder include two files (train and test) for each trained GO term. Example:  train_GO:0032553.ids and test_GO:0032553.ids
 * Annots  (This folder is not available under repository. It should be downloaded from [here](http://goo.gl/Kd7FkU) .)
     * Includes training and testing annotation files. Manual experimental annotations are stored in  "all_categories_manual_experimental_annots_29_08_2017_Propagated.tsv" file and all annotations (including annotations with IEA evidence codes) are stored in "all_categories_all_annots_29_08_2017_Propagated.tsv" file.
 
