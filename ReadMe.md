@@ -25,12 +25,12 @@
     * Includes training and test proteins' UniProt identifiers given individually for each GO term.
     * There are three zip files under this directory (one file for each GO category).
     * These files are unzipped into individual folders, which include two files (train and test) for each GO term trained in the corresposding category.
-    * Example: "train_GO/0043175.ids" and "test_GO/0043175.ids".
+    * Example: "train_GO:0043175.ids" and "test_GO:0043175.ids".
     
 * "ElectronicAnnotationTrainingDatasets"
     * Includes training and test proteins' UniProt identifiers given individually for each GO term, which were used in the manual experimental + electronic annotations (i.e., all annotations) training test.
     * There is a single zip file under this directory. This file is unzipped into a folder, which include two files (train and test) for each trained GO term (proteins annotated with all evidence codes).
-    * Example: "train_GO/0032553.ids" and "test_GO/0032553.ids".
+    * Example: "train_GO:0032553.ids" and "test_GO:0032553.ids".
     
 * "Annots" (This folder is not available under the DEEPred repository. It should be downloaded from [here](http://goo.gl/Kd7FkU))
     * Includes various merged training and test annotation files.
