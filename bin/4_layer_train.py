@@ -497,8 +497,8 @@ def forward_propagation(X, parameters,p_keep_hidden=drop_out_rate):
 
     A2 = tf.nn.dropout(A2, p_keep_hidden)
 
-    Z3 = tf.matmul(W3, A2) + b3
-    A3 = tf.sigmoid(Z3)
+    A3 = tf.matmul(W3, A2) + b3
+
     return A3
 
 def calculateFscore(tp,fp,fn):
